@@ -1,5 +1,6 @@
 # avaj-launcher
   
+  *My first WeThinkCode_ java project that aims to make a flight simulator*
 
 For this project we had to implement a minimal aircraft simulation program based on a given UML class diagram(which you'll find attacted". All classes are required to be implemented respecting every detail provided in the diagram. Feel free to add more classes or include additional attributes if you think it is necessary, but do not change access modifiers or the class hierarchy for the classes provided in the diagram.
 Requirements:
