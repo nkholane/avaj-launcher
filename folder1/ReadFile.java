@@ -14,7 +14,9 @@ public class ReadFile {
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {
                 String data = scanner.nextLine();
-                content.add(data);
+               // content.add(data);
+                if (!data.isBlank())
+                    content.add(data);
             }
             scanner.close();
         } catch (FileNotFoundException e) {
