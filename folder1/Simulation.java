@@ -6,9 +6,7 @@ public class Simulation {
     public static String logger = "";
 
     public static void main(String[] args) throws ErrorHandler {
-        if (args[0] == null) {
-            throw new ErrorHandler("please parse a file");
-        }
+    try {
         ReadFile readFile = new ReadFile();
         ArrayList<String> content = readFile.readFile(args[0]);
         Tower tower = new Tower();
@@ -25,5 +23,8 @@ public class Simulation {
         }
         WriteToFile writeToFile = new WriteToFile();
         writeToFile.writeToFile();
+    } catch (ArrayIndexOutOfBoundsException e) {
+        throw new ErrorHandler("enter a file as argument");   
+    }
     }
 }
