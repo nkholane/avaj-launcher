@@ -1,11 +1,12 @@
 package folder1;
 
 public class ErrorHandler extends Exception {
+ String error;
     public ErrorHandler(String error) {
-            toString(error);
+            this.error = error;
     }
 
-    public String toString(String error) {
-        return "ErrorHandler:" + error;
+    public String toString() {
+        return "ErrorHandler: " + error;
     }
 }
