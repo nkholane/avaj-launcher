@@ -1,7 +1,7 @@
 package folder1;
 
-public class AircraftFactory {
-	public Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
+public abstract class AircraftFactory {
+	public static Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
 		if (type.equals("JetPlane")) {
 			return new JetPlane(name, new Coordinates(longitude, latitude, height));
 		}
